@@ -56,8 +56,9 @@ def useProxy():
         
     return
 
+# to be finished
 def downloadVideo():
-    urllib.request.urlretrieve("https://www.pornhub.com/view_video.php?viewkey=ph5afa4817a7fe4","kevindownload.mp4")
+    urllib.request.urlretrieve("https://www.youtube.com/watch?v=FmpDIaiMIeA","kevindownload.mp4")
     print("finished downloading")
 
 def main():
