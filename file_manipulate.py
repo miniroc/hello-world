@@ -36,9 +36,6 @@ def remove_duplicate_files(root_dir):
                 di[fnamesplit[0]] = fnamesplit[1]
 
 def rename_files(root_dir):
-    #creating an empty dictionary or use "di = dict()" to creat an empty dictionary
-    di = {}
-    
     root_dir_files_tuple = os.walk(root_dir)
 #     print("\!")
 #     print("!")
@@ -48,18 +45,20 @@ def rename_files(root_dir):
     
     for root, dirs, files in root_dir_files_tuple:
         for f in files:
-            fname = f[:-16] + f[-4:]
+#             fname = f[:-16] + f[-4:]
+            fname = f
             fname = fname.replace("&", "-")
             fname = fname.replace("!", "")
             fname = fname.replace(" ", "")
             fname = fname.replace(",", "")
             fname = fname.replace("\'", "")
+            fname = fname.replace("+", "")
 #             print(fname+"\n")
             os.rename(root+"\\"+f, root+"\\"+fname)
 #             print(root+"\\"+fname)
       
 def printfilenames(root, extension):
-    with open("E:\\5.Ethan\\English Video\\mp42mp3.bat", "w") as outf:
+    with open("E:\\5.Ethan\\English Video\\new\\mp42mp3.bat", "w") as outf:
         for rootdir, dir, files in os.walk(root):
             for f in files:
                 fnamesplit = f.split(".")
@@ -73,10 +72,10 @@ def printfilenames(root, extension):
     
 
 def main():
-    root_dir = "E:\\5.Ethan\\English Video"
+    root_dir = "E:\\5.Ethan\\English Video\\new"
     print(root_dir)
 #     remove_duplicate_files(root_dir)
-#     printfilenames(root_dir, "mp4")
+#     printfilenames(root_dir, "mkv")
     rename_files(root_dir)
 
 
