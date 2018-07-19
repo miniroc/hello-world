@@ -10,7 +10,7 @@ import urllib.error
 from urllib.request import ProxyHandler
 from urllib.request import build_opener
 # import argparse
-from pptx import Presentation, spec
+from pptx import Presentation
 from pptx.util import Inches
 from pptx.util import Pt
 from pptx.enum.text import MSO_AUTO_SIZE
@@ -19,6 +19,7 @@ from bs4 import BeautifulSoup
 
 
 def download_index(url, file_path):
+    feature_dicts_list = []
     try:
         #using header to simulate browser
 #         headers = {}
@@ -68,7 +69,9 @@ def download_index(url, file_path):
             if(feature_dict is None):
                 print("failed to get feature list")
                 return
-            addslides(file_path, file_path, feature_dict)
+            feature_dicts_list.append(feature_dict)
+
+    addslides(file_path, file_path, feature_dicts_list)
 
 def downloadpages(url):
     '''html format only works for phonearena detailed spec page like https://www.phonearena.com/phones/LG-Stylo-4_id10876'''
@@ -121,8 +124,9 @@ def downloadpages(url):
     hyper_link_tag = pic_div.find('a', href=True)
     # get link address from a Tag object
     hyper_link = hyper_link_tag['href']
-    temp_file_name = hyper_link[-5:]
+#     temp_file_name = hyper_link[-5:] # will cause conflic pic name
 #     print(hyper_link_tag['href'])
+    temp_file_name = hyper_link.split("/")[-1]
     urllib.request.urlretrieve(hyper_link, temp_file_name) 
     spec_dict['phone_id'] = temp_file_name
     
@@ -142,10 +146,11 @@ def downloadpages(url):
 #     release_date_tag.text.
     
     carriers_tag = soup.find("div", class_='carriers')
-    carrier_tags = carriers_tag.findAll('a')
-    spec_dict['Carriers'] = ""
-    for carrier_tag in carrier_tags:
-        spec_dict['Carriers'] = spec_dict['Carriers'] + carrier_tag.text + " "
+    if(carriers_tag is not None):
+        carrier_tags = carriers_tag.findAll('a')
+        spec_dict['Carriers'] = ""
+        for carrier_tag in carrier_tags:
+            spec_dict['Carriers'] = spec_dict['Carriers'] + carrier_tag.text + " "
     
 #     for each in soup.find_all('a', class_=["s_block_4 s_block_4_s115  s_fst  clearfix","s_block_4 s_block_4_s115     clearfix"]):
 #     for each in soup.find_all('div', class_=' clear specs-holder'):
@@ -260,7 +265,7 @@ def downloadpages(url):
        
     return spec_dict
 
-def addslides(inputfile, outputfile, spec_dict):
+def addslides(inputfile, outputfile, feature_dicts_list):
     """ read a pptx and add slides
     """
     # still missing launch date, price, carriers. , , is not existed in every page
@@ -269,14 +274,17 @@ def addslides(inputfile, outputfile, spec_dict):
     
     prs = Presentation(inputfile)
     # slide_layouts is a slide, Presentation.slides, slide.shapes, shapes.title, shapes.placeholders[]
-    spec_slide_layout = prs.slide_layouts[2] # 2 is no.2 mother template   
-    slide = prs.slides.add_slide(spec_slide_layout)
-
-# add product name    
-    shapes = slide.shapes
-    title_shape = shapes.title
-    title_shape.text = spec_dict['phone_name']
+    spec_slide_layout = prs.slide_layouts[2] # 2 is no.2 mother template
     
+#     add slides according to feature_dicts_list numbers
+    for spec_dict in feature_dicts_list:
+        slide = prs.slides.add_slide(spec_slide_layout)
+    
+    # add product name    
+        shapes = slide.shapes
+        title_shape = shapes.title
+        title_shape.text = spec_dict['phone_name']
+        
     # shapes.placeholder -- body
 #     body_shape = shapes.placeholders[12]
 #     tf = body_shape.text_frame
@@ -290,59 +298,59 @@ def addslides(inputfile, outputfile, spec_dict):
 #     p.text = 'Presentation.slides.shapes.placeholders[].text_frame.paragraph level 2'
 #     p.level = 2
     
-# add product ID
-    img_path = spec_dict['phone_id']    
-    left = Inches(0.01)
-    top = Inches(0.6)
-    height = Inches(5)
-    slide.shapes.add_picture(img_path, left, top, height=height)
+    # add product ID
+        img_path = spec_dict['phone_id']    
+        left = Inches(0.01)
+        top = Inches(0.6)
+        height = Inches(5)
+        slide.shapes.add_picture(img_path, left, top, height=height)
+        
+    # add spec table
+        rows = len(keys)+1
+        cols = 2
+        left = Inches(4.0)
+        top = Inches(0.2)
+        width = Inches(2.0)
+        height = Inches(0.1)
+         
+        table = shapes.add_table(rows, cols, left, top, width, height).table
+        
+        # set column widths
+        table.columns[0].width = Inches(1.6)
+        table.columns[1].width = Inches(4.2)
     
-# add spec table
-    rows = len(keys)+1
-    cols = 2
-    left = Inches(4.0)
-    top = Inches(0.2)
-    width = Inches(2.0)
-    height = Inches(0.1)
-     
-    table = shapes.add_table(rows, cols, left, top, width, height).table
+        # write column headings
+        table.cell(0, 0).text = 'Item'
+        table.cell(0, 1).text = 'Spec'
     
-    # set column widths
-    table.columns[0].width = Inches(1.6)
-    table.columns[1].width = Inches(4.2)
-
-    # write column headings
-    table.cell(0, 0).text = 'Item'
-    table.cell(0, 1).text = 'Spec'
-
-    i=1
-    for key in keys:
-        # check if this items exist
-        if(key in spec_dict.keys()):        
-            key_frame = table.cell(i,0).text_frame
-            key_frame.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
-            p = key_frame.paragraphs[0]
-            run = p.add_run()
-            run.text = key    
-            font = run.font
-            font.name = 'Calibri'
-            font.size = Pt(12)
-            font.bold = False
-            font.italic = None  # cause value to be inherited from theme
-    #       
-            value_frame = table.cell(i,1).text_frame
-            value_frame.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
-            p = value_frame.paragraphs[0]
-            run = p.add_run()
-            run.text = spec_dict[key]
-            font = run.font
-            font.name = 'Calibri'
-            font.size = Pt(12)
-            font.bold = False
-            font.italic = None  # cause value to be inherited from theme
-            
-            i += 1        
-    
+        i=1
+        for key in keys:
+            # check if this items exist
+            if(key in spec_dict.keys()):        
+                key_frame = table.cell(i,0).text_frame
+                key_frame.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
+                p = key_frame.paragraphs[0]
+                run = p.add_run()
+                run.text = key    
+                font = run.font
+                font.name = 'Calibri'
+                font.size = Pt(12)
+                font.bold = False
+                font.italic = None  # cause value to be inherited from theme
+        #       
+                value_frame = table.cell(i,1).text_frame
+                value_frame.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
+                p = value_frame.paragraphs[0]
+                run = p.add_run()
+                run.text = spec_dict[key]
+                font = run.font
+                font.name = 'Calibri'
+                font.size = Pt(12)
+                font.bold = False
+                font.italic = None  # cause value to be inherited from theme
+                
+                i += 1        
+        
 # Store all the items
 #     i=1
 #     for k, v in spec_dict.items():
@@ -374,10 +382,11 @@ def addslides(inputfile, outputfile, spec_dict):
 
 if __name__ == "__main__":
     inputPPT = "C:\\1.Study Video\\eclipse_workspace\\hello-world\\WebCraw2PPT\\input.pptx"
-    feature_dict = downloadpages("https://www.phonearena.com/phones/LG-Aristo-2_id10782")
-    addslides(inputPPT,inputPPT, feature_dict)
+#     feature_dict = downloadpages("https://www.phonearena.com/phones/LG-Aristo-2_id10782")
+#     feature_dict_list = [feature_dict]
+#     addslides(inputPPT,inputPPT, feature_dict_list)
     
-#     download_index("https://www.phonearena.com/phones/carriers/MetroPCS","C:\\1.Study Video\\eclipse_workspace\\hello-world\\WebCraw2PPT\\input.pptx")
+    download_index("https://www.phonearena.com/phones/carriers/MetroPCS",inputPPT)
 
     
     
