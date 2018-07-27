@@ -64,7 +64,169 @@ fit in 后面不能直接+名词，但可以加一个介词。比如：
 	fit in with a new company
 	fit in at a new job
 除了 fit in，我们还可以用 fit into 来表达融入。fit into 后面可以直接+名词
-**********************单词*****************
+**********************Writing 1*****************
+要求150 words，Target是170~190 words
+Vocabulary: Variety of words.
+Coherence
+达到字数要求
+Grammer
+
+1)	Introduction： 1~2 sentences, no more than 2.
+The pie chart/bar chart/flow chart/table/line graph/scattered plots shows/ illustrates/ demonstrates/reprents/lists(for table) the changes(incidence, differences, prevalence, etc)  in sales(Y axis) between 1990 and 1996(x axis)/over a ten year period. 总体介绍
+Here you say what the diagram is about. Mind the title of it and do not forget to include the source. 
+Only facts. No I/me/we, no opinion, no conclusion, no prediction
+2)	Body Paragraph (1~2 paragraphs)
+Axes, Ranges, Peaks/highs and Valleys/lows, Stability (plateau), sudden changes,
+Patterns/Trends (keep it general), Anomalies/exceptions(detailed)
+Tables: Columns, Rows, headings
+Cycle: identify the start, the finish, major steps(milestones), no need for everything
+Compare: Similarities(in general), differences(in detail)
+How to split paragraphs: 1 chart: 1st paragraph focus on trend, 2nd paragraph focusing on anomalies  or 1st paragraph focus on item 1, 2nd paragraph focus on item 2.
+Two chats: 1st paragraphs focus at chart 1, 2nd paragraph focus on chart 2; or 1st paragraph focus on similarities/trends, 2nd paragraph focus on major differences.
+
+No conclusion
+
+
+There was a _rise/increase/declined(a decline)/decreased(a decrease) /went down/dropped/plummeted(a slumpes)/steep drop/plateau__ in _2000__ / between __ and __.
+Sales went down between 2000 and 2008.
+It remains steady/stable. Hit a plateau
+This line graph shows the changes in sales between 1990 and 1996. ( notice axes) 
+使用修饰词Significant increase(significantly), steady increase(steadily), dramatic increase, increased rapidly, sudden increase
+
+
+1、趋势类词汇
+　　上升动词类： Climbing, Increase, go/move up, rise up, grow up, jump up, surge, keep an upward tendency.
+Precedes a sustained move up
+momentum reveals that this index has not even become oversold yet.
+下降动词类： Decrease, go down, decline, fall down, drop, sink, dip, keep a downward tendency, plunge, plummet
+make a new low over a six-month period
+The relative strength peaked in 2008 and has been declining since
+　　波动动词类： Fluctuate
+
+持平动词类： remain the same, stabilize, remain stable, remain constant, a basing period of at least six months, hit plateau
+Followed by, Next to
+Reversely
+Steady, steadily
+
+
+　　修饰动词的副词： slightly 轻微地， slowly 缓慢地， gradually 逐渐地， steadily 稳定地， rapidly 迅速地， moderately 温和地， 轻微地， significantly 明显地， sharply 明显地， dramatically急剧地， drastically 急剧地, frequently
+
+　　2、极值类词汇和表达
+
+　　最高点： reach the peak/top/highest point, peak动词
+
+　　Increase to the peak/top/highest point(所有上升类的动词都可以替换掉increase)
+
+　　最低点： reach the bottom/lowest point
+The index is at the bottom of our relative strength rankings of world markets, having fallen 14% in 2018
+　　drop to the bottom/lowest point(所有下降类的动词都可以替换掉drop)
+
+　　占的最多： occupy/make up/take up/account for the largest proportion/number/percentage of …
+
+　　占的最少： occupy/make up/take up/account for the smallest proportion/number/percentage of …
+
+　　3、倍数的表达方式
+
+　　Double 是两倍/大一倍
+
+　　Increase/decrease three times 增长/减少了三倍
+
+　　4、大约的表达方式
+
+　　About/around + 数字
+
+　　数字 + or so
+
+　　Approximately + 数字
+
+　　5、常用的小作文的趋势句式表达
+
+　　句式一： 变化主体/图画中主体+趋势动词+副词+时间区间
+
+　　Eg: The number of aged people over 65 increased significantly from 1940-2000.
+
+　　The number of aged people over 65 dropped slightly from 1960-1980.
+
+　　The number of aged people over 65 fluctuated between 1 million and 1.2 million from 1940-1950.
+
+　　The number of aged people over 65 remained stable from 1930-1940.
+
+　　句式二： There be + 形容词 + 表示趋势的名词 + in+ 变化的主体 + 时间区间
+
+　　Eg: There was an significant increase in the number of aged people over 65 from 1940-2000.
+
+　　There was a slight decline in the number of aged people over 65 from 1960-1980.
+
+　　There was a fluctuation between 1 million and 1.2 million from 1940-1950.
+
+
+When referring to tables and graphs from within the text, you can use:
+?	Clauses beginning with “as”: “As shown in Table 1, …”
+?	Passive voice: “Results are shown in Table 1.”
+?	Active voice (if appropriate for your discipline): “Table 1 shows that …”
+?	Parentheses: “Each sample tested positive for three nutrients (Table 1).”
+
+**********************Writting 2*****************
+###types###
+Asking for opinions, hybrid, non-opinions（Discuss, compare, problem-solutions, do not need to give your opinions）
+To what extent..., suggest to write completely, totally, fully agree, 好写，否则得写哪些agree哪些不agree
+
+段落结构：
+
+Opinion类型：
+Introduction： cover topic，question，opinion，reason
+Body: 1st paragraph - strong argument for your side
+	2nd paragraph - start with a concession, talk about side B, what are the good sides of side B, make sure it's short, make sure turn it back around and continue to argue your side简要提对方观点的优点，转折再argue your side
+
+Non-opinion类型：
+This essay will look at/discuss/
+As this essay will demonstrate...
+Paragraph one: Though there are several reasons, ___ seems to be the most obvious/pertinent/common/clear.
+Body 1: reason 1 / advantage
+Body 2: reason 2 / disadvantage
+benefit, drawback, compare, contrast
+don't give opinion, it's observation, it's obvious
+
+Hybrid类型：Discuss both, give opinion
+There are pros and cons to ...,  though I believe ...
+Body 1: Discuss both, lean to choose
+Body 2: support your choice, mention the other side
+
+###Write the introduction###
+-Plan first
+-Translate this plan into 3~5 sentences
+-Anser:
+	-what is the topic
+	-what is the question
+	-what is your opinion
+	-water is your reason
+I believe/think/agree/In my opinion .. due to the fact that ...
+
+As a person reaches adulthood, he(he or she whatever it's OK, do not use he/she) needs to decide on where he prefer to live(The topic). While there are advantages to both living in the country and the city(The question), I believe that for economic reasons, life in the city is more beneficial(Your opinion). This is because the city offers more employment opportunities(reason 1), as well as more affordable cost of living(reason 2)
+接下来一段写employment opportunities，第二段写cost of living
+
+Do not copy the questions, paraphrase it ( changes the words, change the structure, keep the same meaning)
+Synonyms替换
+Sentence structure替换  verb ?> nouns ?> adjective, change order
+Using concessions.
+
+Eg. Education is the single most important factor in the development of a country.
+Schooling, essential
+Although many would argue that the economy is the most important factor in nation building, I think education has a far greater impact.
+
+## write the paragraph ##
+-Indent or skip a line between paragraphs, but don't do both
+-one central idea in one paragraph. Thesis statement in general.
+-all other ideas directly related to main 
+-any length, below 4~5 sentenses
+-details: 	- why important
+			reasons
+			examples
+-flow bridges,承接 end with bridge or start with bridge
+-key terms, 其他词avoid repetition,避免重复，用近义词
+
+
+###写作词汇###
 ensue. 接踵而来If the Europeans did not reduce subsidies, a trade war would ensue.
 
 on par with: equal to somone or something
@@ -85,11 +247,44 @@ several parallels exist between A and B
 Embrace: something that is accepted willingly and can be used in one's advantage
 I embrace the opportunity of studying abroad.
 
-Hinder: to make something slow or difficult of weaker, hold back
-Beting too social can hinder a student's ability to focus.
-
 Retain: keep somebody in a position, job, and etc.
 It make it difficult for people to retain their culture identity.
+
+hinder – limit the ability of something.
+weaken – cause something to be LESS strong
+translate – change something into a new form
+intensify – to become stronger
+debate – to discuss in a formal way
+conceive – imagine (could you conceive I’d give you a bonus verb!)
+break – make known – the media broke the story of abandoning public transport last year
+delegate – assign a task to
+lobby – persuade – (especially in government)
+
+HINDER – limit the ability of something.
+Abandoning dated school buses would most likely hinder any efforts to improve road safety around schools, the main reason is that if each parent brings their own child, the traffic around schools would be horrendous.
+Disregarding a detailed list of activities for a free day would most likely hinder any efforts to obtain the full potential of the said free day.
+
+WEAKEN – cause something to be LESS strong
+Abandoning dated school buses would most likely weaken any efforts to improve road safety around schools, the main reason is that if each parent brings their own child, the traffic around schools would be horrendous.
+Disregarding a detailed list of activities for a free day would most likely weaken any efforts to obtain the full potential of the said free day.
+Grammatically perfect but SOUNDS FORCED, and unnatural.
+
+TRANSLATE – change something into a new form
+Abandoning dated school buses would most likely translate into congested and dangerous roads around the school, furthermore the air quality could only worsen.
+Disregarding a detailed list of activities for a free day would most likely translate into a sloppily organised day replete of spontaneous distractions and unforeseen costs.
+
+INTENSIFY – to become stronger
+Abandoning dated school buses would most likely intensify any road safety or pollution issues the school district might already be facing.
+Disregarding a detailed list of activities for a free day would most likely intensify the chances the day descends into a sloppily organised event replete of spontaneous distractions and unforeseen costs.
+Grammatically perfect but SOUNDS FORCED, and unnatural.
+
+DEBATE – to discuss in a formal way
+Those who debate in favour of abandoning school transport may have forgotten important issues such as air quality, road safety, and dual income families.
+Again, not really suitable because there is no real debate, there is no issue, this is more a point of view. Whereas with the school bus issue, it’s easy to imagine a group of parents bickering at each other…
+
+
+irrespective of ...
+**********************单词*****************
 
 Nibble 小口咬
 Devour 狼吞虎咽

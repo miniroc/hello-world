@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding=utf-8
+
 """
 https://python-pptx.readthedocs.io/en/latest/user/quickstart.html
 http://pbpython.com/creating-powerpoint.html
