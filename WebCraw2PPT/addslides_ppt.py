@@ -7,6 +7,7 @@ http://pbpython.com/creating-powerpoint.html
 """
 from __future__ import print_function
 
+import time
 import re
 import urllib.request
 import urllib.error
@@ -20,8 +21,16 @@ from pptx.enum.text import MSO_AUTO_SIZE
 
 from bs4 import BeautifulSoup
 
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
-def download_index(url, file_path):
+
+
+def download_index(specURL, input_file_path, output_file_path):
     feature_dicts_list = []
     try:
         #using header to simulate browser
@@ -30,7 +39,7 @@ def download_index(url, file_path):
         headers = {'User-Agent': "User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"}
 #         req = urllib.request.Request("https://www.phonearena.com/phones/carriers/MetroPCS", headers=headers)
 
-        req = urllib.request.Request(url, headers=headers)
+        req = urllib.request.Request(specURL, headers=headers)
         html = urllib.request.urlopen(req)
         result = html.read().decode('utf-8')
 #         with open("ProductIndex.xml", 'w+') as f:
@@ -67,16 +76,67 @@ def download_index(url, file_path):
             hyper_link = "https://www.phonearena.com" + hyper_link_tag['href']
             print(hyper_link)
 #             start recursively open product link and extract spec
-            feature_dict = downloadpages(hyper_link)
+            feature_dict = downloadSpecPages(hyper_link)
 #             add obtained spec into an existing ppt file
             if(feature_dict is None):
                 print("failed to get feature list")
                 return
             feature_dicts_list.append(feature_dict)
 
-    addslides(file_path, file_path, feature_dicts_list)
+    addslides(input_file_path, output_file_path, feature_dicts_list)
 
-def downloadpages(url):
+def getMetroProductPrice(priceURL):    
+    # find product price through carriers website using Selenium2 aka. webdriver
+    browser = webdriver.Chrome()
+    browser.get(priceURL)
+#     try:
+#         element = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, "myDynamicElement")))
+#     finally:
+#         browser.quit()
+    time.sleep(15)
+    print(browser.page_source)
+    
+    soup = BeautifulSoup(browser.page_source,'html.parser')
+    if(soup is None):
+        print("soup failed")
+        return
+    
+    metro_product_price = {}
+    
+#   get product div
+    product_divs = soup.findAll('div', class_='col-md-6 m-b-10')
+    for product_div in product_divs:
+    #     find name
+        product_name = product_div.find('span', class_="cursor").text
+#         print('product name: ', product_name)
+        
+        product_price_div = product_div.find('div',class_="product-pricing")
+        normal_price_span = product_price_div.find('span', class_="normal-price")
+        if(normal_price_span is not None):
+            metro_product_price[product_name] = ""
+            metro_product_price[product_name] = metro_product_price[product_name] + " normal: " + normal_price_span.text + " "
+#         if(normal_price_span is not None):
+#             price = ''
+#             print("normal price: ", normal_price_span.text)
+#             children = normal_price_span.children
+#             for child in children:
+#                 price = price + child.text
+        current_price_span = product_price_div.find('span', class_="current-price")
+        if(current_price_span is not None):
+            if(product_name not in metro_product_price.keys()):
+                metro_product_price[product_name] = ""
+            metro_product_price[product_name] = metro_product_price[product_name] + " current: " +current_price_span.text
+#         if(current_price_span is not None):
+#             price = ''
+#             children = normal_price_span.children
+#             print("current price: ", current_price_span.text)
+#             for child in children:
+#                 price = price + child.text
+        print(product_name, metro_product_price[product_name])   
+
+    return metro_product_price
+    
+def downloadSpecPages(url):
     '''html format only works for phonearena detailed spec page like https://www.phonearena.com/phones/LG-Stylo-4_id10876'''
     spec_dict = {}
     try:
@@ -140,13 +200,15 @@ def downloadpages(url):
 #     get product release date
     release_date_tag = soup.find('div', class_='metainfo')
 #     some product don't have Posted: or Release date, find either one is OK
-    release_dates = re.findall(r'Posted:.*?20[0-9][0-9]|Release date:.*?20[0-9][0-9]',release_date_tag.text)
-    if(release_dates is not None):
+    release_dates = re.findall(r'Posted:.*?20[0-9][0-9]|Release date:.*?20[0-9][0-9]|Announced:.*?20[0-9][0-9]',release_date_tag.text)
+    print(release_dates)
+    if(len(release_dates) > 0):
         release_date = re.sub("Posted:","",release_dates[0])
-        release_date = re.sub("Release date:","",release_date)
-#         print("release data: ", release_date)
-        spec_dict['Release_date'] = release_date
-#     release_date_tag.text.
+        if(release_date is not None):
+            release_date = re.sub("Release date:","",release_date)
+#           print("release data: ", release_date)
+            spec_dict['Release_date'] = release_date
+#           release_date_tag.text.
     
     carriers_tag = soup.find("div", class_='carriers')
     if(carriers_tag is not None):
@@ -154,6 +216,12 @@ def downloadpages(url):
         spec_dict['Carriers'] = ""
         for carrier_tag in carrier_tags:
             spec_dict['Carriers'] = spec_dict['Carriers'] + carrier_tag.text + " "
+
+# #     get price from carrier's website using webdriver
+#     carriers = spec_dict['carriers'].split(' ')
+#     for carrier in carriers:
+#         price = getPrice(priceURL, carrier)
+        
     
 #     for each in soup.find_all('a', class_=["s_block_4 s_block_4_s115  s_fst  clearfix","s_block_4 s_block_4_s115     clearfix"]):
 #     for each in soup.find_all('div', class_=' clear specs-holder'):
@@ -227,32 +295,35 @@ def downloadpages(url):
 #    merge some of the fileds
 # find if key exist
 #     if('Resolution' in spec_dict.keys()):
-# Another way to find if key exist
-    if('Physical size' in spec_dict.keys()):
+
+# merge several specs
+    if('Display size' in spec_dict.keys()):
         if('Resolution' in spec_dict.keys()):
-            spec_dict['Physical size'] = spec_dict['Physical size'] + ", " + spec_dict['Resolution'] 
+            spec_dict['Display size'] = spec_dict['Display size'] + ", " + spec_dict['Resolution'] 
             del spec_dict['Resolution']
 #             rename dict key name: Physical size -> Display Size
-            spec_dict['Screen size'] = spec_dict.pop('Physical size')
+#             spec_dict['Screen size'] = spec_dict.pop('Display size')
     if('Capacity' in spec_dict.keys()): 
 #         rename dict key name: Physical size -> Display Size
         spec_dict['Battery'] = spec_dict.pop('Capacity') 
 
-    if('Camera' in spec_dict.keys()):
+    if('Rear camera' in spec_dict.keys()):
+        print("have rear camera")
         if('Aperture size' in spec_dict.keys()):
-            spec_dict['Camera'] = spec_dict['Camera'] + "(" + spec_dict['Aperture size'] + ")"
+            spec_dict['Rear camera'] = spec_dict['Rear camera'] + "(" + spec_dict['Aperture size'] + ")"
             del spec_dict['Aperture size']
             
-            if('Front-facing camera' in spec_dict.keys()):
-                spec_dict['Camera'] = spec_dict['Camera'] + " + " + spec_dict['Front-facing camera']
-                del spec_dict['Front-facing camera']
+        if('Front camera' in spec_dict.keys()):
+            spec_dict['Rear camera'] = spec_dict['Rear camera'] + " + " + spec_dict['Front camera']
+            del spec_dict['Front camera']
+            spec_dict['Camera'] = spec_dict.pop('Rear camera')
                  
-    if('System memory' in spec_dict.keys()):
-        if('Built-in storage' in spec_dict.keys()):
-            spec_dict['System memory'] = spec_dict['System memory'] + ", " + spec_dict['Built-in storage'] 
-            del spec_dict['Built-in storage']
+    if('RAM' in spec_dict.keys()):
+        if('Internal storage:' in spec_dict.keys()):
+            spec_dict['RAM'] = spec_dict['RAM'] + ", " + spec_dict['Internal storage:'] 
+            del spec_dict['Internal storage:']
 #             rename dict key name
-            spec_dict['Memory'] = spec_dict.pop('System memory')        
+        spec_dict['Memory'] = spec_dict.pop('RAM')        
     
     if('GSM' in spec_dict.keys()):
         if('UMTS' in spec_dict.keys()):
@@ -272,8 +343,8 @@ def addslides(inputfile, outputfile, feature_dicts_list):
     """ read a pptx and add slides
     """
     # still missing launch date, price, carriers. , , is not existed in every page
-    keys = ["Screen size","Battery","Dimensions","Screen-to-body ratio","System chip","Camera",
-            "Memory","Biometrics","Bluetooth","Wi-Fi", "Bands","OS","Materials","Release_date", 'Carriers']
+    keys = ["Display size","Battery","Dimensions","Screen-to-body ratio","System chip","Camera",
+            "Memory","Biometrics","Bluetooth","Wi-Fi", "Bands","OS","Materials","Release_date", 'Carriers', 'MSRP price']
     
     prs = Presentation(inputfile)
     # slide_layouts is a slide, Presentation.slides, slide.shapes, shapes.title, shapes.placeholders[]
@@ -385,11 +456,30 @@ def addslides(inputfile, outputfile, feature_dicts_list):
 
 if __name__ == "__main__":
     inputPPT = "C:\\1.Study Video\\eclipse_workspace\\hello-world\\WebCraw2PPT\\input.pptx"
-#     feature_dict = downloadpages("https://www.phonearena.com/phones/LG-Aristo-2_id10782")
+#     specURL = "https://www.phonearena.com/phones/carriers/MetroPCS"
+#     specURL = "https://www.phonearena.com/phones/carriers/T-Mobile"
+#     specURL = "https://www.phonearena.com/phones/carriers/Cricket"
+
+#     specURL = "https://www.phonearena.com/phones/ZTE-Avid-4_id10809"
+#     specURL = "https://www.phonearena.com/phones/Alcatel-IDOL-5_id10647"
+#     specURL = "https://www.phonearena.com/phones/LG-Phoenix-Plus_id10945"
+#     priceURL = "https://www.metropcs.com/shop/phones"
+#     metro_product_price = getMetroProductPrice(priceURL)
+    
+#     feature_dict = downloadSpecPages(specURL)
 #     feature_dict_list = [feature_dict]
 #     addslides(inputPPT,inputPPT, feature_dict_list)
     
-    download_index("https://www.phonearena.com/phones/carriers/MetroPCS",inputPPT)
+#     download_index(specURL, inputPPT)
+
+    specURLsPrefix = "https://www.phonearena.com/phones/carriers/"
+#     carriers = ["MetroPCS", "T-Mobile", "Cricket", "AT&T"]
+    carriers = ["T-Mobile"]
+    
+    for carrier in carriers:
+        download_index(specURLsPrefix+carrier, inputPPT, inputPPT.replace("input", carrier))
+    
+    print("all finished")
 
     
     

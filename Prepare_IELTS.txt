@@ -71,100 +71,126 @@ Coherence
 达到字数要求
 Grammer
 
-1)	Introduction： 1~2 sentences, no more than 2.
-The pie chart/bar chart/flow chart/table/line graph/scattered plots shows/ illustrates/ demonstrates/reprents/lists(for table) the changes(incidence, differences, prevalence, etc)  in sales(Y axis) between 1990 and 1996(x axis)/over a ten year period. 总体介绍
-Here you say what the diagram is about. Mind the title of it and do not forget to include the source. 
-Only facts. No I/me/we, no opinion, no conclusion, no prediction
-2)	Body Paragraph (1~2 paragraphs)
-Axes, Ranges, Peaks/highs and Valleys/lows, Stability (plateau), sudden changes,
-Patterns/Trends (keep it general), Anomalies/exceptions(detailed)
-Tables: Columns, Rows, headings
-Cycle: identify the start, the finish, major steps(milestones), no need for everything
-Compare: Similarities(in general), differences(in detail)
-How to split paragraphs: 1 chart: 1st paragraph focus on trend, 2nd paragraph focusing on anomalies  or 1st paragraph focus on item 1, 2nd paragraph focus on item 2.
-Two chats: 1st paragraphs focus at chart 1, 2nd paragraph focus on chart 2; or 1st paragraph focus on similarities/trends, 2nd paragraph focus on major differences.
+1. TYPE PURPOSE
+	Formal: don't know name
+		Requesting information from a company
+		Applying for a job
+		Complaining to a bank, store, airline re:product/service
+		Making a recommendation/suggestion
+	Semi-formal: know name
+		Complaining to a landlord
+		Explaining to a neighbor
+		Asking a professor for permission
+	Informal: familiar with
+		Inviting someone you know well
+		Thanking a friend
+		Apologizing
+		Asking for advice
+		
+2. Open and close the letter correctly. Do this based on the type and purpose
+Formal
+	To someone you have not met, whose name you don’t know
+		Dear Sir/Madam,
+		Yours faithfully,
+Semi-formal
+	To someone you may or may not have met, whose last name you know
+		Dear Mr Brown,
+		Dear Ms Stone
+		Yours sincerely,
+Informal
+	To someone you know well, whose first name you know and use
+		Dear John, 
+		Dear Anita,
+		Best regards,
+		Warm wishes,
+3.Start the letter appropriately.
+	a. Open a formal and semi-formal letter with a formal sentence and paragraph. Get down to business and say why you are writing. Don’t try to be friendly, as you do not know the person you are writing to.
+	Formal:
+		Dear Sir/Madam,
+		I am writing to inquire about…
+		I am writing in connection with…
+	Semi-formal
+		Dear Mr Johnson,
+		I am writing to inform you that…
+		I am writing to…
+	b. Open an informal letter with a general, friendly paragraph. Acknowledge your friendship first, before explaining the reason for your letter. In fact, the first paragraph could include just friendly small talk, unrelated to the reason for your writing.
+		Dear Susan
+		I hope you and your family are all well! It was so wonderful to spend time with all of you last month. It felt great to catch up with you and Bob, get to know your children, and have fun together after so long. You have always been dear friends of mine, and always will be. Anyway, the reason I’m writing is that I have some good news: I am getting married in September…
+	How are things in New York? I hope you’re keeping cool during the heat wave.
+	Hope your summer’s off to a great start. Is it vacation time yet?
+	Hey, it’s Friday! I hope you have some cool plans for the weekend.
+4. Divide your letter into paragraphs.
+Usually you need four paragraphs:
+	Introduction
+	Problem / Situation
+	Solution / Action
+	Conclusion
+In your letter, answer the points:
+explain the problem
+describe why it disturbs you
+suggest a solution
 
-No conclusion
+5. USEFUL EXPRESSIONS FOR LETTER-WRITING
+Apologizing
+Please accept my sincere apologies for…  -- formal/semi-formal
+I am very sorry about…
+Sorry for…
 
+Asking for help
+I’d be grateful if you could…
+I would appreciate it if you could…
+Could you please…
 
-There was a _rise/increase/declined(a decline)/decreased(a decrease) /went down/dropped/plummeted(a slumpes)/steep drop/plateau__ in _2000__ / between __ and __.
-Sales went down between 2000 and 2008.
-It remains steady/stable. Hit a plateau
-This line graph shows the changes in sales between 1990 and 1996. ( notice axes) 
-使用修饰词Significant increase(significantly), steady increase(steadily), dramatic increase, increased rapidly, sudden increase
+Asking for information
+I am writing to enquire about…
+I am writing to find out about…
+I would like to know about…
 
+Closing
+I look forward to hearing from you,
+I look forward to seeing you,
+I look forward to meeting you,
 
-1、趋势类词汇
-　　上升动词类： Climbing, Increase, go/move up, rise up, grow up, jump up, surge, keep an upward tendency.
-Precedes a sustained move up
-momentum reveals that this index has not even become oversold yet.
-下降动词类： Decrease, go down, decline, fall down, drop, sink, dip, keep a downward tendency, plunge, plummet
-make a new low over a six-month period
-The relative strength peaked in 2008 and has been declining since
-　　波动动词类： Fluctuate
+Complaining
+I am writing to express my dissatisfaction with…
+I am writing to express my annoyance with…
+I’m not happy with…
 
-持平动词类： remain the same, stabilize, remain stable, remain constant, a basing period of at least six months, hit plateau
-Followed by, Next to
-Reversely
-Steady, steadily
+Expressing satisfaction
+I was delighted to learn that…
+I was thrilled to hear that…
+I was very glad to hear that…
 
+Expressing concern
+I am writing to express my concern about…
+I was very sorry to learn that…
+I was really sorry to hear that…
 
-　　修饰动词的副词： slightly 轻微地， slowly 缓慢地， gradually 逐渐地， steadily 稳定地， rapidly 迅速地， moderately 温和地， 轻微地， significantly 明显地， sharply 明显地， dramatically急剧地， drastically 急剧地, frequently
+Giving bad news
+I regret to advise you that…
+I regret to inform you that…
+I am sorry to tell you that…
 
-　　2、极值类词汇和表达
+Giving good news
+I am pleased to advise you that…
+I am delighted to inform you that…
+I am happy to tell you that…
 
-　　最高点： reach the peak/top/highest point, peak动词
+Giving reasons
+This is due to…
+This is a result of
+… This is because…
 
-　　Increase to the peak/top/highest point(所有上升类的动词都可以替换掉increase)
+Making suggestions
+Perhaps it would be useful to…
+Perhaps it would be possible to…
+It might be helpful to…
 
-　　最低点： reach the bottom/lowest point
-The index is at the bottom of our relative strength rankings of world markets, having fallen 14% in 2018
-　　drop to the bottom/lowest point(所有下降类的动词都可以替换掉drop)
+Thanking
+I am extremely grateful for…
+I really appreciate…
+Thank you for…
 
-　　占的最多： occupy/make up/take up/account for the largest proportion/number/percentage of …
-
-　　占的最少： occupy/make up/take up/account for the smallest proportion/number/percentage of …
-
-　　3、倍数的表达方式
-
-　　Double 是两倍/大一倍
-
-　　Increase/decrease three times 增长/减少了三倍
-
-　　4、大约的表达方式
-
-　　About/around + 数字
-
-　　数字 + or so
-
-　　Approximately + 数字
-
-　　5、常用的小作文的趋势句式表达
-
-　　句式一： 变化主体/图画中主体+趋势动词+副词+时间区间
-
-　　Eg: The number of aged people over 65 increased significantly from 1940-2000.
-
-　　The number of aged people over 65 dropped slightly from 1960-1980.
-
-　　The number of aged people over 65 fluctuated between 1 million and 1.2 million from 1940-1950.
-
-　　The number of aged people over 65 remained stable from 1930-1940.
-
-　　句式二： There be + 形容词 + 表示趋势的名词 + in+ 变化的主体 + 时间区间
-
-　　Eg: There was an significant increase in the number of aged people over 65 from 1940-2000.
-
-　　There was a slight decline in the number of aged people over 65 from 1960-1980.
-
-　　There was a fluctuation between 1 million and 1.2 million from 1940-1950.
-
-
-When referring to tables and graphs from within the text, you can use:
-?	Clauses beginning with “as”: “As shown in Table 1, …”
-?	Passive voice: “Results are shown in Table 1.”
-?	Active voice (if appropriate for your discipline): “Table 1 shows that …”
-?	Parentheses: “Each sample tested positive for three nutrients (Table 1).”
 
 **********************Writting 2*****************
 ###types###
@@ -425,3 +451,101 @@ jeopardise 注意拼写
 
 The pendulum has swung back and the American car companies have made dramatic advances in safety
 
+
+
+********************************************************************************************
+
+1)	Introduction： 1~2 sentences, no more than 2.
+The pie chart/bar chart/flow chart/table/line graph/scattered plots shows/ illustrates/ demonstrates/reprents/lists(for table) the changes(incidence, differences, prevalence, etc)  in sales(Y axis) between 1990 and 1996(x axis)/over a ten year period. 总体介绍
+Here you say what the diagram is about. Mind the title of it and do not forget to include the source. 
+Only facts. No I/me/we, no opinion, no conclusion, no prediction
+2)	Body Paragraph (1~2 paragraphs)
+Axes, Ranges, Peaks/highs and Valleys/lows, Stability (plateau), sudden changes,
+Patterns/Trends (keep it general), Anomalies/exceptions(detailed)
+Tables: Columns, Rows, headings
+Cycle: identify the start, the finish, major steps(milestones), no need for everything
+Compare: Similarities(in general), differences(in detail)
+How to split paragraphs: 1 chart: 1st paragraph focus on trend, 2nd paragraph focusing on anomalies  or 1st paragraph focus on item 1, 2nd paragraph focus on item 2.
+Two chats: 1st paragraphs focus at chart 1, 2nd paragraph focus on chart 2; or 1st paragraph focus on similarities/trends, 2nd paragraph focus on major differences.
+
+No conclusion
+
+
+There was a _rise/increase/declined(a decline)/decreased(a decrease) /went down/dropped/plummeted(a slumpes)/steep drop/plateau__ in _2000__ / between __ and __.
+Sales went down between 2000 and 2008.
+It remains steady/stable. Hit a plateau
+This line graph shows the changes in sales between 1990 and 1996. ( notice axes) 
+使用修饰词Significant increase(significantly), steady increase(steadily), dramatic increase, increased rapidly, sudden increase
+
+
+1、趋势类词汇
+　　上升动词类： Climbing, Increase, go/move up, rise up, grow up, jump up, surge, keep an upward tendency.
+Precedes a sustained move up
+momentum reveals that this index has not even become oversold yet.
+下降动词类： Decrease, go down, decline, fall down, drop, sink, dip, keep a downward tendency, plunge, plummet
+make a new low over a six-month period
+The relative strength peaked in 2008 and has been declining since
+　　波动动词类： Fluctuate
+
+持平动词类： remain the same, stabilize, remain stable, remain constant, a basing period of at least six months, hit plateau
+Followed by, Next to
+Reversely
+Steady, steadily
+
+
+　　修饰动词的副词： slightly 轻微地， slowly 缓慢地， gradually 逐渐地， steadily 稳定地， rapidly 迅速地， moderately 温和地， 轻微地， significantly 明显地， sharply 明显地， dramatically急剧地， drastically 急剧地, frequently
+
+　　2、极值类词汇和表达
+
+　　最高点： reach the peak/top/highest point, peak动词
+
+　　Increase to the peak/top/highest point(所有上升类的动词都可以替换掉increase)
+
+　　最低点： reach the bottom/lowest point
+The index is at the bottom of our relative strength rankings of world markets, having fallen 14% in 2018
+　　drop to the bottom/lowest point(所有下降类的动词都可以替换掉drop)
+
+　　占的最多： occupy/make up/take up/account for the largest proportion/number/percentage of …
+
+　　占的最少： occupy/make up/take up/account for the smallest proportion/number/percentage of …
+
+　　3、倍数的表达方式
+
+　　Double 是两倍/大一倍
+
+　　Increase/decrease three times 增长/减少了三倍
+
+　　4、大约的表达方式
+
+　　About/around + 数字
+
+　　数字 + or so
+
+　　Approximately + 数字
+
+　　5、常用的小作文的趋势句式表达
+
+　　句式一： 变化主体/图画中主体+趋势动词+副词+时间区间
+
+　　Eg: The number of aged people over 65 increased significantly from 1940-2000.
+
+　　The number of aged people over 65 dropped slightly from 1960-1980.
+
+　　The number of aged people over 65 fluctuated between 1 million and 1.2 million from 1940-1950.
+
+　　The number of aged people over 65 remained stable from 1930-1940.
+
+　　句式二： There be + 形容词 + 表示趋势的名词 + in+ 变化的主体 + 时间区间
+
+　　Eg: There was an significant increase in the number of aged people over 65 from 1940-2000.
+
+　　There was a slight decline in the number of aged people over 65 from 1960-1980.
+
+　　There was a fluctuation between 1 million and 1.2 million from 1940-1950.
+
+
+When referring to tables and graphs from within the text, you can use:
+?	Clauses beginning with “as”: “As shown in Table 1, …”
+?	Passive voice: “Results are shown in Table 1.”
+?	Active voice (if appropriate for your discipline): “Table 1 shows that …”
+?	Parentheses: “Each sample tested positive for three nutrients (Table 1).”
