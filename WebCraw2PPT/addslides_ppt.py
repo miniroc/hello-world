@@ -472,13 +472,17 @@ if __name__ == "__main__":
     
 #     download_index(specURL, inputPPT)
 
-    specURLsPrefix = "https://www.phonearena.com/phones/carriers/"
+#     specURLsPrefix = "https://www.phonearena.com/phones/carriers/"
+    specURLsPrefix = "https://www.phonearena.com/phones/manufacturers/ZTE/page/"
 #     carriers = ["MetroPCS", "T-Mobile", "Cricket", "AT&T"]
-    carriers = ["T-Mobile"]
-    
-    for carrier in carriers:
-        download_index(specURLsPrefix+carrier, inputPPT, inputPPT.replace("input", carrier))
-    
+#     carriers = ["T-Mobile"]
+#     carriers = ["ZTE"]
+#     for carrier in carriers:
+#         download_index(specURLsPrefix+carrier, inputPPT, inputPPT.replace("input", carrier))
+        
+    for i in range(2, 7, 1):
+        download_index(specURLsPrefix+str(i), inputPPT, inputPPT.replace("input", "ZTE"+str(i)))
+  
     print("all finished")
 
     

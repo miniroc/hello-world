@@ -94,8 +94,8 @@ Formal
 		Yours faithfully,
 Semi-formal
 	To someone you may or may not have met, whose last name you know
-		Dear Mr Brown,
-		Dear Ms Stone
+		Dear Mr. Brown,
+		Dear Ms. Stone
 		Yours sincerely,
 Informal
 	To someone you know well, whose first name you know and use
@@ -110,7 +110,7 @@ Informal
 		I am writing to inquire about…
 		I am writing in connection with…
 	Semi-formal
-		Dear Mr Johnson,
+		Dear Mr. Johnson,
 		I am writing to inform you that…
 		I am writing to…
 	b. Open an informal letter with a general, friendly paragraph. Acknowledge your friendship first, before explaining the reason for your letter. In fact, the first paragraph could include just friendly small talk, unrelated to the reason for your writing.
@@ -167,7 +167,7 @@ I was very sorry to learn that…
 I was really sorry to hear that…
 
 Giving bad news
-I regret to advise you that…
+I regret to advise you that…    相比较I am regretful to advise you that ...: "we regret..." is used more frequently, "We regret..." is more direct (as the primary action is the act of regretting and not the state of being regretful established with the verb "are") and directness is usually appreciated in formal writing. On some level the phrase is a cliche, but its a cliche for a reason: it is the best way of expressing your desired sententiment.
 I regret to inform you that…
 I am sorry to tell you that…
 
@@ -193,6 +193,8 @@ Thank you for…
 
 
 **********************Writting 2*****************
+Your essay should include four paragraphs (an introduction, two body paragraphs and a conclusion)
+
 ###types###
 Asking for opinions, hybrid, non-opinions（Discuss, compare, problem-solutions, do not need to give your opinions）
 To what extent..., suggest to write completely, totally, fully agree, 好写，否则得写哪些agree哪些不agree
@@ -218,7 +220,8 @@ There are pros and cons to ...,  though I believe ...
 Body 1: Discuss both, lean to choose
 Body 2: support your choice, mention the other side
 
-###Write the introduction###
+
+#############Write the introduction###########
 -Plan first
 -Translate this plan into 3~5 sentences
 -Anser:
@@ -227,6 +230,7 @@ Body 2: support your choice, mention the other side
 	-what is your opinion
 	-water is your reason
 I believe/think/agree/In my opinion .. due to the fact that ...
+(for non-opinion essay: )This essay will look at/discuss...
 
 As a person reaches adulthood, he(he or she whatever it's OK, do not use he/she) needs to decide on where he prefer to live(The topic). While there are advantages to both living in the country and the city(The question), I believe that for economic reasons, life in the city is more beneficial(Your opinion). This is because the city offers more employment opportunities(reason 1), as well as more affordable cost of living(reason 2)
 接下来一段写employment opportunities，第二段写cost of living
@@ -240,7 +244,7 @@ Eg. Education is the single most important factor in the development of a countr
 Schooling, essential
 Although many would argue that the economy is the most important factor in nation building, I think education has a far greater impact.
 
-## write the paragraph ##
+############# write the paragraph ####################
 -Indent or skip a line between paragraphs, but don't do both
 -one central idea in one paragraph. Thesis statement in general.
 -all other ideas directly related to main 
@@ -251,8 +255,34 @@ Although many would argue that the economy is the most important factor in natio
 -flow bridges,承接 end with bridge or start with bridge
 -key terms, 其他词avoid repetition,避免重复，用近义词
 
+############# write the conclusion ####################
+In conclusion, ...
+To conclude, ...
+To Sum up, ...
+To summarize, 
+In summary, 
+Thus, with the above in mind, .../ it is fair to conclude that ...
 
-###写作词汇###
+Dos: 
+-Keep it short, 1~2 sentenses are enough
+-Keep it simple - boring is  good
+-Restate the thesis - opinion to opinion, outline to outline
+-Restate the highlights - main points, resons/arguments
+-Write a conclusion
+
+Don'ts:
+-Introducing new ideas - can't elaberate, confuse the reader, weaken the main argument
+-Use a personal pronoun(I, me, my), 会比较弱，前面已经提到了I belive等观点，这里结尾用比较强的语气，强烈的结论。 It is true that .../no doubt that ...
+
+
+
+####################写作词汇#############################
+Arguments arise regards how to ...
+Our society is polarized with regard to ...
+polarized opinion
+xxx is one of the most salient quality we seek to folster in our children.
+
+
 ensue. 接踵而来If the Europeans did not reduce subsidies, a trade war would ensue.
 
 on par with: equal to somone or something
@@ -310,6 +340,76 @@ Again, not really suitable because there is no real debate, there is no issue, t
 
 
 irrespective of ...
+
+Urbanization has become an irreversible trend in modern society and an increasing number of children have become urban dwellers
+
+It is undeniable that life in the countryside facilitates improving children’s physical and psychological health
+
+　　1．对…产生有利/不利的影响 exert positive/ negative effects on…
+　　2．利远远大于弊 the advantages far outweigh the disadvantages.
+　　3．导致，引起 lead to/ give rise to/ contribute to/ result in
+　　4．复杂的社会现象 a complicated social phenomenon
+　　5．责任感 / 成就感 sense of responsibilityGetWord("responsibility");/ sense of achievement
+　　6. 竞争与合作精神 sense of competition and cooperation
+　　7. 开阔眼界 widen one’s horizon/ broaden one’s vision
+　　8．学习知识和技能 acquire knowledge and skills
+　　9．经济/心理负担 financial burden / psychological burdenGetWord("burden");
+　　10．考虑到诸多因素 take many factors into account/ consideration
+　　11. 就...达到绝对的一致  reach an absolute consensus on...
+　　12. 有充分的理由支持  be supported by sound reasons
+　　13. 双方的论点  argument on both sides
+　　14. 对...必不可少  be indispensable to ...
+　　15. 发挥着日益重要的作用  play an increasingly important role in...
+　　16. 对...产生有利/不利的影响  exert positive/negative effects on...
+　　17. 复杂的社会现象  a complicated social phenomenon
+　　18. 责任感  a sense of responsibility
+　　19. 竞争与合作精神  sense of competition and cooperation
+　　20. 学习知识和技能  acquire knowledge and skills
+　　21. 经济/心里负担  financial burden/ psychological burden
+　　22. 考虑到诸多因素  take many factors into account/consideration
+　　23. 从另一个角度  from another perspective
+　　24. 做出共同努力  make joint efforts
+　　25. 打下坚实的基础  lay a solid foundation for...
+　　26. 综合素质  comprehensive quality
+　　27. 开阔眼界 widen one’s horizon/ broaden one’s vision
+　　28.学习知识和技能 acquire knowledge and skills
+　　29.经济/心理负担 financial burden / psychological burden
+　　30.考虑到诸多因素 take many factors into account/ consideration
+　　31. 从另一个角度 from another perspective
+　　32.做出共同努力 make joint efforts
+　　33. 对…有益 be beneficial / conducive to…
+　　34.为社会做贡献 make contributions to the society
+　　35.打下坚实的基础 lay a solid foundation for…
+　　36.综合素质 comprehensive quality
+　　37.无可非议 blameless / beyond reproach
+　　39.致力于/ 投身于 be committed / devoted to…
+　　40. 应当承认 Admittedly
+There is no denying that the specific issue of sth./ 或接whether 从句 has
+　　become controversial. However, in spite of those who are against/ for
+　　..., I approve wholeheartedly of/ 或 I strongly object to the idea that
+　　...
+　　Those who hold negative/ positive attitude towards ...
+　　believe that ... may exert adverse/ significant effect on us. ... is
+　　always top of the list of their argument. For example,... (请用举例子的方法解释).
+　　Besides, those critics/ advocates also claim that ...（此处写第二个原因）for the
+　　reason that ...
+　　It is often the case that …(此处总结上段反方提出的几个观点)。But
+　　when it comes to ..., ..., and ...,(此处先总结写你所支持的几个理由)，an increasing
+　　number of people including me are convinced that ... For one thing, ....
+　　The evidence recently presented in research journals available to the
+　　public confirms that ...此处写调查结果，通过数字来证明自己所列举的理由1. Similarly,... should
+　　also deserve our special attention. In other words, ...(换种说法解释).
+　　If...not, ...(反过来在说一遍)。Last but not least, ...
+　　Obviously, it is hard for both sides to come to an agreement on this complicated issue,
+　　but I still commit to the notion that ...(再重申你的立场).
+　　最后，再为大家介绍一个社会热点问题讨论的模板：
+　　Today, there has been growing public concern about whether _______________________________________ _______________________________________. Personally, I think _________________________________ _________________________-for three reasons.
+　　The principal reason for my view is ___________________________________________________________. It is evident that___________________________________________; therefore, _______________________ _________________________________________. In other words, _________________________________ ________________________________________. For instance, ____________________________________  ________________________________.
+　　Another reason for my view is _____________________________________________________. Specifically, it is generally accepted in my country that _____________________________________________________; thus, ________________________________________________________. After all, ___________________ ________________ , which means ___________________________________________________________.
+　　Additionally, ________________________________________________________________. It seems to me that ___________________________________________________________. This is due to the fact _______ _____________________________________________. By that I mean ______________________________ _____________________________________________.
+　　In sum, for these reasons, I tend to believe _____________________________________________________ ___________________. And overall, it seems_______________ should ______________________________ ___________________________________________________________________________.
+
+
 **********************单词*****************
 
 Nibble 小口咬
